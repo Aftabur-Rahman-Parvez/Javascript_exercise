@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow function</title>
+</head>
+<body>
+    
+    <script>
+        let getArrowValue= o=>10*o;
+        let getArrowValue2= (o,p)=>(10*o)/p;
+        let getArrowValue3= (o,p)=>{
+            console.log(o*p);
+            return (o/p)
+           
+        };
+        console.log(getArrowValue(7));
+        console.log(getArrowValue2(10,2));
+        getArrowValue3(9,2)
+        console.log( getArrowValue3(9,2));
+    
+    </script>
+</body>
+</html>
