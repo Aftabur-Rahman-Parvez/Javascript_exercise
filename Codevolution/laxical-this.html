@@ -13,9 +13,9 @@
         let employee= {
             id:1,
             greet:function(){
-                let show=this;
-                setTimeout(function(){
-                    console.log(show.id);
+                // let show=this;
+                setTimeout(()=>{
+                    console.log(this.id);
                 },0100);
             }
 

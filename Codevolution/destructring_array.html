@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring Array</title>
+</head>
+<body>
+    
+
+    <script>
+        let employee=["abir","balam","male"];
+        // let [fname,lname,gender="Female"]=employee;
+        let [fname,...all]=employee;
+        console.log(fname);
+        // console.log(lname);
+        // console.log(gender);
+        console.log(all);
+    </script>
+</body>
+</html>

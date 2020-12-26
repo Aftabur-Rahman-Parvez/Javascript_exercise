@@ -6,6 +6,55 @@
     <title>Object Letarial</title>
 </head>
 <body>
+
+    <script>
+        let firstName="Asif";
+        let lastName="Rahman";
+
+        let personName={
+            firstName:firstName,
+            lastName
+        }
+        function createPerson(firstName,lastName,age){
+            let fullName=firstName + " " +lastName;
+            return {
+                firstName,
+                lastName,
+                fullName,
+                diff:function(){
+                    return age>40;
+                }
+            }
+        }
+        let o=createPerson("rose","khan",23);
+        console.log(o);
+        console.log(o.fullName);
+        console.log(o.firstName);
+        console.log(o.lastName);
+        console.log(o.diff());
+        let personName1={
+            firstName:o.fullName,
+            lastName:o.firstName,
+            fullName:o.lastName
+        }
+        console.log(personName1);
+
+        console.log(personName);
+        console.log(personName.lastName);
+
+
+
+
+
+        let last ="Last Name";
+        let person={
+            "first name":"kaiser",
+            [last]:"Ahmed",
+        }
+        let p=person["first name"];
+        console.log(p);
+        console.log(person);
+    </script>
     
 </body>
 </html>
