@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread Operator</title>
+</head>
+<body>
+    
+    <script>
+        let spreadOperatorVal=function(message,...colors){
+            console.log(message);
+            console.log(colors);
+            for(let i in colors){
+                console.log(colors[i]);
+            }
+
+        }
+
+        let arrayVal=['red','green','blue'];
+        let message="List of Spread Operator";
+
+        spreadOperatorVal(message,...arrayVal)
+    </script>
+</body>
+</html>
