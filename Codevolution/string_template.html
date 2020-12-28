@@ -7,8 +7,20 @@
 </head>
 <body>
     <script>
-        let user="Chandaler";
-        let output=` This is "a" ${user}
+        let user={
+            id:5,
+            sped:function(){
+                
+                setvalue(()=>{
+                    console.log(this.id);
+                    let j=this.id;
+                    
+                })
+                return this.id;
+            }
+        };
+        
+        let output=` This is "a" ${user.sped}
             The 
         `;
         console.log(output);

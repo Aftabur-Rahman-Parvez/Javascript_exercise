@@ -9,13 +9,25 @@
     
 
     <script>
-        let employee=["abir","balam","male"];
+        let employee=["abir","balam","male","female"];
         // let [fname,lname,gender="Female"]=employee;
-        let [fname,...all]=employee;
+        let [fname,ndName,...all]=employee;
         console.log(fname);
+        console.log(ndName);
+        // console.log(all);
         // console.log(lname);
         // console.log(gender);
         console.log(all);
+
+        let people =[ 
+            { name : "abir" , class:5,roll:10},
+            {name : "abir" , class:6,roll:10},
+            {name : "abir" , class:7,roll:10},
+            {name : "abir" , class:8,roll:10},
+        ]
+        let [fst,secst,...list]=people;
+        console.log(fst.name);
+
     </script>
 </body>
 </html>

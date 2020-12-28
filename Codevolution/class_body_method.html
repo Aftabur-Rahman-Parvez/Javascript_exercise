@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Body Method</title>
+</head>
+<body>
+    
+
+    <script>
+        class Person{
+            constructor(name){
+                this.name=name;
+                console.log(this.name + "Constructor");
+            }
+            static staticMethod(){
+                console.log("Static Method");
+            }
+            greatPerson(){
+                console.log(this.name+"Method");
+            }
+        }
+
+        let p=new Person("chandan");
+        Person.staticMethod();
+        p.greatPerson();
+
+    </script>
+</body>
+</html>
