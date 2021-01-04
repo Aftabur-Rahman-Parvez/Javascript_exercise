@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Map</title>
+</head>
+<body>
+    
+    <script>
+        let mySet=Object.create(null);
+        console.log(mySet);
+        mySet.id=1;
+        if(mySet.id){
+            console.log("Id Exist");
+        }
+
+        let myMap=Object.create(null);
+        myMap.name="Chandal";
+         let val= myMap.name;
+         console.log(val);
+        myMap[100]="Hello";
+        console.log( myMap[100]); 
+
+        let map=new Map([
+            ['a',10],
+            ['b',14],
+            ['c',17],
+            ['d',9],
+        ]);
+        console.log(map);
+        map.set('e',5);
+        console.log(map.size);
+        console.log(map.get('b'));
+        console.log(map.keys());
+        console.log(map.values());
+
+        for(let [k,v] of map){
+            console.log(k,v);
+        }
+
+        map.forEach((v,k) => {
+            console.log(k,v);
+        });
+
+        for(let key of map.keys()){
+            console.log(key);
+        }
+
+
+        let set1=new Set([1,2,3,4,5,3,4,5]).add(9);
+        console.log(set1);
+        console.log(set1.size);
+        console.log(set1.has(5));
+        console.log(set1.to);
+
+
+    </script>
+</body>
+</html>
